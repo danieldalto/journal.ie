@@ -64,7 +64,7 @@ class JournalAPI {
 
 extension JournalAPI: JournalAPIProtocol {
     func fetchArticlesRiver(endpoint: Endpoint) async throws -> ArticleRiver {
-        guard endpoint.isRiverEndpoint else { throw URLError(.badURL) }
+        guard endpoint.isRiver else { throw URLError(.badURL) }
         return try await fetchRiver(path: endpoint.path())
     }
 }

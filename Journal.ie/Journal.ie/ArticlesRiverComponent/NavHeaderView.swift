@@ -35,7 +35,7 @@ struct NavHeaderView: View {
         }
         .frame(maxWidth: .infinity)
         .frame(height:60)
-        .foregroundColor(colorScheme == .dark ? .purple : .blue)
+        .foregroundColor(colorScheme == .dark ? .white : .black)
     }
 }
 

@@ -13,10 +13,10 @@ struct ArticleView: View {
     
     var body: some View {
         VStack(spacing: 20) {
-            NavHeaderView(title: "The Journal Article")
+            NavHeaderView(title: "Article Details")
             ScrollView() {
                 VStack(spacing: 20) {
-                    Text("ArticleID: \(articleId)").font(.title).bold()
+                    Text("ID: \(articleId)").font(.title).bold()
                     Text("TBD: Create a component to render articles.")
                 }
             }

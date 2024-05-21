@@ -8,11 +8,14 @@
 import Foundation
 
 // climate-change, housing, ep2024, google
-var exampleEndpointTags = [ Endpoint.tag(name: "Climate Change", slug: "climate-change"),
+var exampleRiverEndpoints = [ Endpoint.publication(name: "The Journal", slug: "thejournal"),
+                            Endpoint.publication(name: "The Score", slug: "thescore"),
+                            Endpoint.tag(name: "Climate Change", slug: "climate-change"),
                             Endpoint.tag(name: "Housing", slug: "housing"),
                             Endpoint.tag(name: "EP 2024", slug: "ep2024")]
 
-var initialRiverEndpoint = Endpoint.publication(name: "The Journal", slug: "thejournal")
+
+var initialRiverEndpoint = exampleRiverEndpoints.first!
 
 
 /// Journal API endpoints definitions and helpers
@@ -21,12 +24,20 @@ enum Endpoint: Codable,Equatable,Hashable {
     case publication(name: String, slug: String) // valid params: thejournal, thescore
     case tag(name: String, slug: String) // valid params: climate-change, housing, ep2024, google
     
-    var isRiverEndpoint: Bool {
+    var isRiver: Bool {
         switch self {
         case .publication(_,_):
             return true
         case .tag(_,_):
             return true
+        }
+    }
+    var isPublication: Bool {
+        switch self {
+        case .publication(_,_):
+            return true
+        default:
+            return false
         }
     }
     

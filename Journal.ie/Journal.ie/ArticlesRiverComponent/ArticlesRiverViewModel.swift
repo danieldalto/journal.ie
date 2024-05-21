@@ -45,7 +45,7 @@ extension ArticlesRiverViewModel: ArticlesRiverViewModelProtocol {
         return endpoint.title
     }
     var tags: [Endpoint] {
-        return exampleEndpointTags.filter({$0.id != endpoint.id})
+        return exampleRiverEndpoints.filter({$0.id != endpoint.id})
     }
     
     func refreshData() {

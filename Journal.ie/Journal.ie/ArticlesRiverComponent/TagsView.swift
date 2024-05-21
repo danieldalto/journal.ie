@@ -19,8 +19,8 @@ struct TagsView: View {
             Text(e.title!)
                 .font(.caption)
                 .bold()
-                .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
-        }.background(.blue)
+                .padding(EdgeInsets(top: 2, leading: 4, bottom: 2, trailing: 4))
+        }.background(e.isPublication ? .purple : .blue)
             .foregroundColor(.white)
             .cornerRadius(5)
     }
@@ -36,5 +36,5 @@ struct TagsView: View {
 }
 
 #Preview {
-    TagsView(tags: exampleEndpointTags) { _ in }
+    TagsView(tags: exampleRiverEndpoints) { _ in }
 }
