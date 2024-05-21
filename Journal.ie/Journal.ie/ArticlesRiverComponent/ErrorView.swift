@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Component to show a posible error on loading data from the api
 struct ErrorView: View {
     let error: Error
     let refreshAction: ()->Void

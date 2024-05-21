@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+/// Router to handle navigation based on endpoints
 final class Router: ObservableObject {
     
     public enum Destination: Codable, Hashable {

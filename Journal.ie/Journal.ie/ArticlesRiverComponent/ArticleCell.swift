@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Component to show an article post cell
 struct ArticleCell: View {
     @Environment(\.colorScheme) var colorScheme
     let article: ArticleModel

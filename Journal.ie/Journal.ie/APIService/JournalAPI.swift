@@ -8,6 +8,8 @@
 import Foundation
 import Combine
 
+
+/// Implementation of the Journal API
 class JournalAPI {
     static private let BASE_URL = "https://api.thejournal.ie/v3/"
     static private let BASIC_AUTH = "codetest:AQJl5jewY2lZkrJpiT1cCJkj1tLPn64R"

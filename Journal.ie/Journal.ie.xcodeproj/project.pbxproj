@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4BFFAB22BFCEAD900A7E815 /* Composer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BFFAB12BFCEAD900A7E815 /* Composer.swift */; };
 		F4C139F62BF791EC000C5214 /* Journal_ieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C139F52BF791EC000C5214 /* Journal_ieApp.swift */; };
 		F4C139FA2BF791ED000C5214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C139F92BF791ED000C5214 /* Assets.xcassets */; };
 		F4C139FD2BF791ED000C5214 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C139FC2BF791ED000C5214 /* Preview Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F4BFFAB12BFCEAD900A7E815 /* Composer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composer.swift; sourceTree = "<group>"; };
 		F4C139F22BF791EC000C5214 /* Journal.ie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.ie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C139F52BF791EC000C5214 /* Journal_ieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal_ieApp.swift; sourceTree = "<group>"; };
 		F4C139F92BF791ED000C5214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				F4C13A1C2BF86680000C5214 /* Router.swift */,
+				F4BFFAB12BFCEAD900A7E815 /* Composer.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4C13A062BF7926C000C5214 /* JournalAPI.swift in Sources */,
+				F4BFFAB22BFCEAD900A7E815 /* Composer.swift in Sources */,
 				F4C13A152BF7EB74000C5214 /* ArticlesRiverView.swift in Sources */,
 				F4C13A082BF79280000C5214 /* JournalAPIProtocol.swift in Sources */,
 				F4C13A0D2BF7A962000C5214 /* RiverResponseModel.swift in Sources */,

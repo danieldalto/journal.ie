@@ -10,23 +10,19 @@ import SwiftUI
 @main
 struct Journal_ieApp: App {
     @ObservedObject var router = Router()
-    let api = JournalAPI()
-    
-    func riverView(for e: Endpoint) -> some View {
-        let vm = ArticlesRiverViewModel(api: api, endpoint: e)
-        return ArticlesRiverView(vm: vm)
-    }
+    private var composer = Composer()
     
     var body: some Scene {
         WindowGroup {
+            // centralized navigation
             NavigationStack(path: $router.navPath) {
-                self.riverView(for: initialRiverEndpoint)
+                composer.riverView(for: initialRiverEndpoint)
                 .navigationDestination(for: Router.Destination.self) { destination in
                     switch destination {
                     case .article(let id):
-                        ArticleView(articleId: id)
+                        composer.articleView(id: id)
                     case .river(let endpoint):
-                        self.riverView(for: endpoint)
+                        composer.riverView(for: endpoint)
                     }
                 }
             }

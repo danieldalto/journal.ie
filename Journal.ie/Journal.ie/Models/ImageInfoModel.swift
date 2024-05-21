@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Model representing an image inside any API article
 struct ImageInfoModel: Decodable {
     let image: String
     

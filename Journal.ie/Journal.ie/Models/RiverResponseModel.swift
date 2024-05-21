@@ -11,6 +11,7 @@ struct RiverResponseContentModel: Decodable {
     let articles: ArticleRiver
 }
 
+/// Model representing the API response for any river endpoint
 struct RiverResponseModel: Decodable {
     let rendered: Int
     let status: Bool

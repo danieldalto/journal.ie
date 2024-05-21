@@ -9,6 +9,7 @@ import Foundation
 
 typealias ArticleRiver = [ArticleModel]
 
+/// Model representing the API Article.
 struct ArticleModel: Decodable, Identifiable {
     static func == (lhs: ArticleModel, rhs: ArticleModel) -> Bool {
         return lhs.id == rhs.id

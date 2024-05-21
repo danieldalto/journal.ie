@@ -14,6 +14,8 @@ var exampleEndpointTags = [ Endpoint.tag(name: "Climate Change", slug: "climate-
 
 var initialRiverEndpoint = Endpoint.publication(name: "The Journal", slug: "thejournal")
 
+
+/// Journal API endpoints definitions and helpers
 enum Endpoint: Codable,Equatable,Hashable {
     
     case publication(name: String, slug: String) // valid params: thejournal, thescore

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Component to show a custom navigation bar
 struct NavHeaderView: View {
     @EnvironmentObject var router: Router
     @Environment(\.colorScheme) var colorScheme

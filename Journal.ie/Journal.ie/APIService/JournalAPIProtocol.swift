@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 
+/// Required interface for the Journal API
 protocol JournalAPIProtocol {
     func fetchArticlesRiver(endpoint: Endpoint) async throws -> ArticleRiver
 }
